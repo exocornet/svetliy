@@ -1,0 +1,6 @@
+mixin monuments-block(data)
+  +b('monuments-block')
+    for item in data.monument
+      +b('monument', { m: item.modifier })
+        +e('description', {}, 'p') !{item.description}
+        +e('image', {}, 'img')(src=item.image)
