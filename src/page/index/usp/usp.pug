@@ -1,5 +1,7 @@
 include ../data
 
-+b('usp')
-  +e('fff')= usp.name
-  +button
++full-screen-bg('usp')
+  +b('usp', {b: 'container'})
+    +e('heading', {}, 'h1')= usp.heading
+    +e('description', {}, 'p') !{ usp.description }
+    +e('leaves', {}, 'div')

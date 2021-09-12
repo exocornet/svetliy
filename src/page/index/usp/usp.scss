@@ -1,0 +1,39 @@
+@include full-screen-bg(usp) {
+  background: url("./public/images/usp/bg-usp.jpg") no-repeat;
+  background-size: cover;
+  height: 1080px;
+  display: flex;
+}
+
+.usp {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #0F133C;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #0f133c;
+    margin-top: 15px;
+    max-width: 51%;
+  }
+
+  &__leaves {
+    background: url("./public/images/usp/bg-leaves.png") no-repeat;
+    background-size: auto;
+    position: absolute;
+    top: -370px;
+    left: -400px;
+    width: 971px;
+    height: 971px;
+  }
+}
