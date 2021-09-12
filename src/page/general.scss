@@ -1,0 +1,39 @@
+//блок подключения шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//блок миксинов
+@mixin media($media) {
+  @media only screen and (max-width: $media) {
+    @content;
+  }
+}
+
+//основные стили сайта
+body {
+  font-family: Inter;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include media(1109px) {
+    max-width: 930px;
+  }
+
+  @include media(929px) {
+    max-width: 690px;
+  }
+
+  @include media(767px) {
+     max-width: 510px;
+   }
+
+  @include media(575px) {
+    max-width: 290px;
+  }
+}

@@ -1,0 +1,4 @@
+mixin menu(data)
+  +b('menu', {}, 'nav')
+    for navLink in data
+      +e('link', {}, 'a')(href= navLink.href)= navLink.link
