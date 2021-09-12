@@ -1,6 +1,10 @@
 include ../../node_modules/bempug/index
 include ../components/components
--BEMPUG.modifier = '_';
+-
+  BEMPUG.modifier = '_';
+  BEMPUG.afterParse[ '' ] = function( block ) {
+    block.classes = [];
+  }
 
 //-Блок подключения инклюдов на страницах
 block includes

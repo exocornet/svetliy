@@ -1,5 +1,5 @@
 {
-  "name": "expertnost",
+  "name": "svetliy",
   "version": "1.0.0",
   "description": "test",
   "main": "app.js",
@@ -582,10 +582,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exocornet/expertnost.git"
+    "url": "git+https://github.com/exocornet/svetliy.git"
   },
   "bugs": {
-    "url": "https://github.com/exocornet/expertnost/issues"
+    "url": "https://github.com/exocornet/svetliy/issues"
   },
-  "homepage": "https://github.com/exocornet/expertnost#readme"
+  "homepage": "https://github.com/exocornet/svetliy#readme"
 }
