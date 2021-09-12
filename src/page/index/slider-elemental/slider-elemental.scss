@@ -1,0 +1,15 @@
+.slider-elemental {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin-top: 80px;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0f133c;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #AFC924;
+  }
+}
