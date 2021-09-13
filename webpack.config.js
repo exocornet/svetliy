@@ -234,12 +234,12 @@ contPlugin.push(
   }),
 
   //подключение jquery в проект
-  // new webpack.ProvidePlugin({
-  //   $: 'jquery',
-  //   jQuery: 'jquery',
-  //   'window.jQuery': 'jquery',
-  //   // 'window.$': 'jquery'
-  // })
+  new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery',
+    // 'window.$': 'jquery'
+  })
 );
 
 //Плагины срабатывающие по триггерам режима сборки prod и dev

@@ -1,8 +1,19 @@
-import 'reset-css/sass/_reset.scss'; // Сброс стилей для одинакового отображения во всех браузерах
-import './main.scss'; // Подключение уникальных стилей
+// Сброс стилей для одинакового отображения во всех браузерах
+import 'reset-css/sass/_reset.scss';
 
-const test = () => {
-  console.log('Hello');
-}
+// Подключение стилей слайдера
+import 'slick-slider/slick/slick.scss'
+import 'slick-slider/slick/slick-theme.scss'
 
-test();
+// Подключение уникальных стилей
+import './main.scss';
+
+import * as $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
+
+// Подключение слайдера
+import 'slick-slider/slick/slick.min'
+
+// Настройки слайдеров
+import './page/index/elemental/slider-elemental'

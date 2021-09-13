@@ -1,0 +1,48 @@
+.elemental {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin-top: 80px;
+  padding-bottom: 1px;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0f133c;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #afc924;
+  }
+}
+
+.slider-elemental {
+  margin-top: 40px;
+
+  &__slide {
+    margin: 0 30px;
+    position: relative;
+  }
+
+  &__image {
+    width: 480px;
+    height: 280px;
+
+    border-radius: 20px;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 25px;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #ffffff;
+  }
+
+  &.slick-dotted.slick-slider {
+    margin-bottom: 80px;
+  }
+
+  .slick-slide {
+
+  }
+}
