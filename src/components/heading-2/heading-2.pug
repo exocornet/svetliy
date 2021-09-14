@@ -1,2 +1,2 @@
 mixin heading-2(data, bem)
-  +b('heading-2', {m: bem ? bem : ''}, 'h2')(class!=attributes.class) !{data}
+  +b('heading-2', {m: bem.m, b: bem.b}, 'h2') !{data}
