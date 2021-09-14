@@ -1,0 +1,50 @@
+@include full-screen-bg(excursion) {
+  background: url("./public/images/excursion/shadow-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 308px;
+  display: flex;
+}
+
+.excursion {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #0F133C;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 21.6px;
+    color: #ffffff;
+    margin-top: 19px;
+    max-width: 51%;
+    font-weight: 400;
+
+    &:before {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 108px;
+      background: #ffffff;
+      margin-bottom: 23px;
+    }
+  }
+}
