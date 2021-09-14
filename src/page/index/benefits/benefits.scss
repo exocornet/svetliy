@@ -1,0 +1,8 @@
+@include full-screen-bg(benefits) {
+  background: url("./public/images/bg-benefits.jpg") no-repeat;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  margin-top: 80px;
+}
+
