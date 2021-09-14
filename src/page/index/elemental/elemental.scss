@@ -45,12 +45,37 @@
   }
 
   .slick-dots li.slick-active button:before {
+    color: #afc924;
+  }
 
+  .slick-dots {
+    bottom: -50px;
   }
 
   .slick-dots li button:before {
     font-size: 16px;
     color: #c4c4c4;
-    //opacity: 1;
+    opacity: 1;
+  }
+
+  .slick-prev, .slick-next {
+    color: #0f133c;
+    cursor: pointer;
+    width: 65px;
+    bottom: -60px;
+    top: auto;
+    z-index: 99;
+
+    &:hover {
+      color: #9d9b9b;
+    }
+  }
+
+  .slick-prev {
+    left: calc(50% - 200px);
+  }
+
+  .slick-next {
+    right: calc(50% - 200px);
   }
 }
