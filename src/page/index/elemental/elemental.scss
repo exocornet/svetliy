@@ -32,17 +32,25 @@
 
   &__description {
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     font-size: 16px;
     line-height: 1.35;
     color: #ffffff;
+    padding: 0 30px;
+    width: 420px;
   }
 
   &.slick-dotted.slick-slider {
     margin-bottom: 80px;
   }
 
-  .slick-slide {
+  .slick-dots li.slick-active button:before {
 
+  }
+
+  .slick-dots li button:before {
+    font-size: 16px;
+    color: #c4c4c4;
+    //opacity: 1;
   }
 }

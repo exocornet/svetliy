@@ -4,7 +4,7 @@ $('.slider-elemental').slick({
   slidesToScroll: 2,
   dots: true,
   centerMode: true,
-  centerPadding: '20px',
+  centerPadding: '15px',
   responsive: [
     {
       breakpoint: 1109,
