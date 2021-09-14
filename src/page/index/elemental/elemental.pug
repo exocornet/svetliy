@@ -1,19 +1,8 @@
 +b('elemental', {b: 'container'})
-  +e('heading', {}, 'h3')= elemental.heading
+  +e('heading', {}, 'h3') !{elemental.heading}
 
   +b('slider-elemental')
-    +e('slide')
-      +e('image', {}, 'img')(src='./public/images/elemental/slider-elemental1.jpg')
-      +e('description',{}, 'p') Огонь – прозрачная стеклянная сфера в золотых руках, установленная на куполе центрального монумента
-
-    +e('slide')
-      +e('image', {}, 'img')(src='./public/images/elemental/slider-elemental1.jpg')
-      +e('description',{}, 'p') Огонь – прозрачная стеклянная сфера в золотых руках, установленная на куполе центрального монумента
-
-    +e('slide')
-      +e('image', {}, 'img')(src='./public/images/elemental/slider-elemental1.jpg')
-      +e('description',{}, 'p') Огонь – прозрачная стеклянная сфера в золотых руках, установленная на куполе центрального монумента
-
-    +e('slide')
-      +e('image', {}, 'img')(src='./public/images/elemental/slider-elemental1.jpg')
-      +e('description',{}, 'p') Огонь – прозрачная стеклянная сфера в золотых руках, установленная на куполе центрального монумента
+    for item in elemental.slide
+      +e('slide')
+        +e('image', {}, 'img')(src= item.image)
+        +e('description',{}, 'p') !{item.description}

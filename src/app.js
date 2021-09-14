@@ -16,4 +16,4 @@ window.$ = $;
 import 'slick-slider/slick/slick.min'
 
 // Настройки слайдеров
-import './page/index/elemental/slider-elemental'
+import './page/index/elemental/elemental'
