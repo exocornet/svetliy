@@ -1,4 +1,4 @@
-mixin menu(data)
+mixin menu(data, bem)
   +b('menu', {}, 'nav')
     for navLink in data
-      +e('link', {}, 'a')(href= navLink.href)= navLink.link
+      +e('link', bem, 'a')(href= navLink.href) !{navLink.link}

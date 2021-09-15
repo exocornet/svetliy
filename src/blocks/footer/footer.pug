@@ -1,2 +1,8 @@
-+b('footer', {t: 'footer'})
-  h2 FOOTER
+include data
+
++b('footer', {b: 'container'}, 'footer')
+  +logo('./public/images/logo.png')
+  +b('social-block')
+    for item in footer
+      +social-icon(item)
+  +menu(navLinks, {m: 'footer'})

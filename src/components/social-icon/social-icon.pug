@@ -1,0 +1,3 @@
+mixin social-icon(data)
+  +b('social-icon', {}, 'a')(href=data.href)
+    +e('icon', {}, 'img')(src=data.icon)
