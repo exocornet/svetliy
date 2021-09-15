@@ -3,6 +3,10 @@
   background-size: cover;
   height: 1080px;
   display: flex;
+
+  @include media(1169px) {
+    height: 560px;
+  }
 }
 
 .usp {
@@ -17,6 +21,11 @@
     text-transform: uppercase;
     color: #0F133C;
     font-family: 'Raleway', sans-serif;
+
+    @include media(1169px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   &__description {
@@ -25,6 +34,10 @@
     color: #0f133c;
     margin-top: 15px;
     max-width: 51%;
+
+    @include media(1169px) {
+      font-size: 16px;
+    }
   }
 
   &__leaves {
@@ -35,5 +48,9 @@
     left: -400px;
     width: 971px;
     height: 971px;
+
+    @include media(1169px) {
+      height: 510px;
+    }
   }
 }

@@ -21,20 +21,24 @@ img {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 30px;
 
-  @include media(1109px) {
+  @include media(1169px) {
     max-width: 930px;
   }
 
-  @include media(929px) {
+  @include media(959px) {
     max-width: 690px;
+    padding: 0 40px;
   }
 
-  @include media(767px) {
+  @include media(769px) {
      max-width: 510px;
+    padding: 0 35px;
    }
 
-  @include media(575px) {
+  @include media(579px) {
     max-width: 290px;
+    padding: 0 15px;
   }
 }
