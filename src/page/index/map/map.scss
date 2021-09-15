@@ -1,8 +1,80 @@
 .map {
   margin-top: 80px;
+  position: relative;
 
   &__map-wrapper {
     margin-top: 30px;
     height: 700px;
+    position: relative;
   }
+
+  &__billet {
+    height: 260px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: calc(50% - 160px);
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+  }
+}
+
+.address {
+  z-index: 2;
+  position: absolute;
+  top: calc(50% - 160px);
+  left: 0;
+  right: 0;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 0 ;
+  box-sizing: border-box;
+
+  &__title {
+    color: #0F133C;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.48px;
+  }
+
+  &__desc {
+    color: #8185A8;
+    line-height: 21.6px;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: Inter, 'sans-serif';
+  }
+
+  &__city-address {
+    background: url("./public/images/map/location.png") no-repeat left top;
+    padding-left: 28px;
+    color: #0F133C;
+    font-size: 16px;
+    font-family: Inter, 'sans-serif';
+    font-weight: 200;
+    line-height: 21.6px;
+    margin-top: 20px;
+  }
+
+  &__phone {
+    background: url("./public/images/map/phone.png") no-repeat left top;
+    padding-left: 28px;
+    color: #0F133C;
+    font-size: 16px;
+    font-family: Inter, 'sans-serif';
+    font-weight: 200;
+    line-height: 21.6px;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+    margin-top: 10px;
+    &:hover {
+      color: #FF7018;
+    }
+  }
+
 }

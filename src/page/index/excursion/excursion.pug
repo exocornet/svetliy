@@ -1,12 +1,11 @@
 +full-screen-bg('excursion')
   +b('excursion', {b: 'container'})
-    +e('wrapper')
-      +e('content')
-        +heading-2(excursion.heading, { m: "substrate" })
-        +e('description', {}, 'p') !{excursion.description}
-      +e('form', {}, 'form')
-        +e('input',{}, 'input')(name='name')
-        +e('input',{}, 'input')(name='name')
-        +e('button', {}, 'button')
+    +e('content')
+      +heading-2(excursion.heading, { m: "substrate" })
+      +e('description', {}, 'p') !{excursion.description}
+    +form
+      +e('input',{}, 'input')(name='name')
+      +e('input',{}, 'input')(name='name')
+      +e('button', {}, 'button')
 
 
