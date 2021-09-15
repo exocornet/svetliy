@@ -1,3 +1,8 @@
 +full-screen-bg('benefits')
   +b('benefits', {b: 'container'})
     +heading-2(benefits.heading, {m: 'substrate'})
+    +b('benefits-items')
+      for item in benefits.benefitsItems
+        +e('item')
+          +e('image', {}, 'img')(src= item.image)
+          +e('name', {}, 'p') !{item.name}
