@@ -224,14 +224,14 @@ contPlugin.push(
   }),
 
   //отвечает за копирование не компилируемых файлов в продакшен
-  new CopyWebpackPlugin({
-    patterns: [
-      {
-        from: './src/public',
-        to: './'
-      }
-    ]
-  }),
+  // new CopyWebpackPlugin({
+  //   patterns: [
+  //     {
+  //       from: './src/public',
+  //       to: './'
+  //     }
+  //   ]
+  // }),
 
   //подключение jquery в проект
   new webpack.ProvidePlugin({
@@ -258,16 +258,16 @@ module.exports = (env, argv) => {
           ['gifsicle', { interlaced: true }],
           ['mozjpeg', { quality: 85 }],
           ['pngquant', { optimizationLevel: 6 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  removeViewBox: false,
-                },
-              ],
-            },
-          ],
+          // [
+          //   'svgo',
+          //   {
+          //     plugins: [
+          //       {
+          //         removeViewBox: false,
+          //       },
+          //     ],
+          //   },
+          // ],
         ],
       },
     }));

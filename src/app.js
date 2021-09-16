@@ -3,7 +3,7 @@ import 'reset-css/sass/_reset.scss';
 
 // Подключение стилей слайдера
 import 'slick-slider/slick/slick.scss'
-import 'slick-slider/slick/slick-theme.scss'
+import 'slick-slider/slick/slick-theme.css'
 
 // Подключение уникальных стилей
 import './main.scss';
