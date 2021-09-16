@@ -9,7 +9,11 @@
   }
 }
 
-//основные стили сайта
+//основные стили
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
