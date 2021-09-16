@@ -28,6 +28,14 @@
       font-size: 16px;
     }
 
+    @include media(959px) {
+      padding: 0px 40px;
+      min-height: 269px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     &:before {
       content: "";
       display: block;
@@ -65,6 +73,10 @@
 
     @include media(1169px) {
       min-height: 364px;
+    }
+
+    @include media(959px) {
+      min-height: 270px;
     }
   }
 

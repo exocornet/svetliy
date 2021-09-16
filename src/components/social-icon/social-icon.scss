@@ -8,15 +8,29 @@
   justify-content: center;
   margin-right: 20px;
 
+  @include media(959px) {
+    width: 33px;
+    height: 33px;
+    margin-right: 14px;
+  }
+
   &:hover {
     background: #ff7018;
   }
 
   &:last-child {
     margin-right: 0;
+
+    @include media(959px) {
+      margin-right: 14px;
+    }
   }
 
   &__icon {
     width: 25px;
+
+    @include media(959px) {
+      width: 17px;
+    }
   }
 }

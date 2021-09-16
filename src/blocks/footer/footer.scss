@@ -9,4 +9,8 @@
   display: flex;
   flex-grow: 1;
   margin-left: 95px;
+
+  @include media(959px) {
+    margin-left: 32px;
+  }
 }

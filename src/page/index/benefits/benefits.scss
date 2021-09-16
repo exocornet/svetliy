@@ -4,10 +4,22 @@
   height: 650px;
   display: flex;
   margin-top: 80px;
+
+  @include media(1169px) {
+    height: 480px;
+  }
+
+  @include media(959px) {
+    height: 445px;
+  }
 }
 
 .benefits {
   padding-top: 60px;
+
+  .heading-2 {
+    text-align: center;
+  }
 }
 
 .benefits-items {
@@ -24,12 +36,26 @@
     margin-bottom: 70px;
   }
 
+  &__image {
+    @include media(1169px) {
+      height: 60px;
+    }
+
+    @include media(959px) {
+      height: 50px;
+    }
+  }
+
   &__name {
     margin-top: 15px;
     font-size: 20px;
 
     @include media(1169px) {
       font-size: 16px;
+    }
+
+    @include media(959px) {
+      font-size: 12px;
     }
   }
 }
