@@ -24,6 +24,10 @@
     @include media(959px) {
       margin-right: 14px;
     }
+
+    @include media(769px) {
+      margin-right: 0;
+    }
   }
 
   &__icon {

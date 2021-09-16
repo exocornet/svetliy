@@ -13,6 +13,14 @@
   @include media(959px) {
     height: 445px;
   }
+
+  @include media(769px) {
+    margin-top: 30px;
+  }
+
+  @include media(769px) {
+    height: 100%;
+  }
 }
 
 .benefits {
@@ -20,6 +28,11 @@
 
   .heading-2 {
     text-align: center;
+  }
+
+  @include media(769px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -35,6 +48,10 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 70px;
+
+    @include media(769px) {
+      width: calc(100% / 2);
+    }
   }
 
   &__image {

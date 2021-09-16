@@ -1,3 +1,9 @@
 .logo {
   text-decoration: none;
+
+  .img {
+    @include media(769px) {
+      height: 32px;
+    }
+  }
 }

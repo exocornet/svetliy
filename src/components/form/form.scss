@@ -75,11 +75,11 @@
     }
 
     &:hover {
-      background: linear-gradient(271.61deg, #FF7715 0.34%, #FF6B18 99.64%);
+      background: linear-gradient(271.61deg, #ff7715 0.34%, #ff6b18 99.64%);
     }
 
     &:active {
-      background: linear-gradient(271.61deg, #F06506 0.84%, #F45904 99.64%);
+      background: linear-gradient(271.61deg, #f06506 0.84%, #f45904 99.64%);
     }
   }
 }
@@ -117,4 +117,19 @@ input:-ms-input-placeholder {
 
 input:focus:-ms-input-placeholder {
   color: #ffffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+  font-size: 16px;
 }

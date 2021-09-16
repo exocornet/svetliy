@@ -7,6 +7,10 @@
   @include media(1169px) {
     height: 560px;
   }
+
+  @include media(769px) {
+    height: 420px;
+  }
 }
 
 .usp {
@@ -26,6 +30,11 @@
       font-size: 32px;
       line-height: 38px;
     }
+
+    @include media(769px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &__description {
@@ -37,6 +46,11 @@
 
     @include media(1169px) {
       font-size: 16px;
+    }
+
+    @include media(769px) {
+      font-size: 14px;
+      max-width: 100%;
     }
   }
 

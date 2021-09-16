@@ -23,7 +23,10 @@ $('.slider-elemental').slick({
     {
       breakpoint: 769,
       settings: {
-
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '5px',
+        arrows: false
       }
     },
     {

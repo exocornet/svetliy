@@ -3,6 +3,10 @@
   background-size: cover;
   height: 308px;
   display: flex;
+
+  @include media(769px) {
+    height: 100%;
+  }
 }
 
 .excursion {
@@ -13,6 +17,11 @@
 
   @include media(769px) {
     flex-direction: column;
+    padding: 60px 120px 75px;
+
+    .heading-2 {
+      text-align: center;
+    }
   }
 
   &__content {
@@ -35,6 +44,7 @@
       width: 100%;
       text-align: center;
       max-width: 100%;
+      font-size: 12px;
     }
 
     &:before {

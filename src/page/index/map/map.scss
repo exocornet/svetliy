@@ -6,6 +6,10 @@
     margin-top: 50px;
   }
 
+  @include media(769px) {
+    margin-top: 30px;
+  }
+
   &__map-wrapper {
     margin-top: 30px;
     height: 700px;

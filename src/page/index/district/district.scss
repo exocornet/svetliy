@@ -5,6 +5,10 @@
     margin-top: 50px;
   }
 
+  @include media(769px) {
+    margin-top: 30px;
+  }
+
   &__counter {
     margin-top: 10px;
     z-index: 1;
@@ -20,9 +24,15 @@
     line-height: 27px;
     color: #0F133C;
     font-weight: 300;
+
     @include media(1169px) {
       font-size: 16px;
     }
+
+    @include media(769px) {
+      font-size: 12px;
+    }
+
     @include media(579px) {
       text-align: center;
     }
