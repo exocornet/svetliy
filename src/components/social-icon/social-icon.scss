@@ -8,6 +8,10 @@
   justify-content: center;
   margin-right: 20px;
 
+  &:hover {
+    background: #ff7018;
+  }
+
   &:last-child {
     margin-right: 0;
   }
