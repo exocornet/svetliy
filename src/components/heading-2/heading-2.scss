@@ -8,4 +8,14 @@
   &_substrate {
     color: #ffffff;
   }
+
+  @include media(1169px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @include media(769px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

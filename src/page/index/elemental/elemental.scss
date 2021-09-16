@@ -42,6 +42,10 @@
     color: #ffffff;
     padding: 0 30px;
     width: 420px;
+
+    @include media(1169px) {
+      width: 350px;
+    }
   }
 
   &.slick-dotted.slick-slider {

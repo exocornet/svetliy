@@ -11,7 +11,7 @@ $('.slider-elemental').slick({
     {
       breakpoint: 1109,
       settings: {
-
+        centerPadding: '0px',
       }
     },
     {
