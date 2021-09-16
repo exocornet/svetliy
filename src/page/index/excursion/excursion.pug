@@ -3,11 +3,11 @@
     +e('content')
       +heading-2(excursion.heading, { m: "substrate" })
       +e('description', {}, 'p') !{excursion.description}
+
     +form('form', {}, 'form')(method='get' action="#")
-      +e('form-group')
-        +e('input input-phone',{}, 'input')(name='phone' type='tel' placeholder='Ваш номер телефона' required)
-        +e('button-clear hide', {}, 'button')
-        +e('input input-name',{}, 'input')(name='name' type='text' placeholder='Ваше имя' required)
-        +e('button', {}, 'button')(type='submit') Записаться
+      +e('input input-phone',{}, 'input')(name='phone' type='tel' placeholder='Ваш номер телефона' required)
+      +e('button-clear hide', {}, 'button')
+      +e('input input-name',{}, 'input')(name='name' type='text' placeholder='Ваше имя' required)
+      +e('button', {}, 'button')(type='submit') Записаться
 
 

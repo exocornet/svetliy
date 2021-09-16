@@ -1,6 +1,10 @@
 .district {
   margin-top: 80px;
 
+  @include media(1169px) {
+    margin-top: 50px;
+  }
+
   &__counter {
     margin-top: 10px;
     z-index: 1;

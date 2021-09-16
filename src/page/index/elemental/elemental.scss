@@ -4,6 +4,10 @@
   margin-top: 80px;
   padding-bottom: 1px;
 
+  @include media(1169px) {
+    margin-top: 50px;
+  }
+
   &__heading {
     font-weight: bold;
     font-size: 24px;
@@ -55,7 +59,7 @@
     }
 
     @include media(959px) {
-      width: 310px;
+      width: 280px;
       bottom: 10px;
       padding: 0 10px;
     }

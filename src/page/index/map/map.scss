@@ -2,6 +2,10 @@
   margin-top: 80px;
   position: relative;
 
+  @include media(1169px) {
+    margin-top: 50px;
+  }
+
   &__map-wrapper {
     margin-top: 30px;
     height: 700px;
@@ -15,14 +19,10 @@
     width: 100%;
     z-index: 1;
     top: calc(50% - 160px);
-    @include media(959px) {
-      right: 0;
-      bottom: 0;
-    }
-  }
 
-  &__wrapper {
-    margin-top: 30px;
+    @include media(959px) {
+      top: calc(50% - 115px);
+    }
   }
 }
 
@@ -38,6 +38,10 @@
   justify-content: space-between;
   padding: 60px 0 ;
   box-sizing: border-box;
+
+  @include media(959px) {
+    top: calc(50% - 115px);
+  }
 
   &__title {
     color: #0F133C;
@@ -81,5 +85,18 @@
       color: #FF7018;
     }
   }
+}
 
+.map-wrap {
+  height: 700px;
+  margin-top: 30px;
+
+  @include media(1169px) {
+    height: 560px;
+    margin-top: 20px;
+  }
+
+  @include media(959px) {
+    height: 430px;
+  }
 }
