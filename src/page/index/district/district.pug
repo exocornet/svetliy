@@ -1,0 +1,8 @@
++b('district', {b: 'container'})
+  +heading-2(district.heading, {})
+  +e('description',{}, 'p') !{district.description}
+  +e('counter') 01 / !{district.slide.length}
+  +b('slider-district')(id='slider-district-id')
+    for item in district.slide
+      +e('slide')
+        +e('image', {}, 'img')(src= item.image)

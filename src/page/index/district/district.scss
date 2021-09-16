@@ -1,0 +1,64 @@
+.district {
+  margin-top: 80px;
+
+  &__counter {
+    margin-top: 10px;
+    z-index: 1;
+    font-size: 20px;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    font-weight: 500;
+    color: #0F133C;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 27px;
+    color: #0F133C;
+    font-weight: 300;
+  }
+
+}
+
+.slider-district {
+
+  &__slide {
+    //position: relative;
+  }
+
+  &__controller {
+    position: relative;
+  }
+
+  &__image {
+    margin-top: 20px;
+    object-fit: none;
+  }
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    color: #0f133c;
+    cursor: pointer;
+    width: 65px;
+    bottom: -60px;
+    top: 0;
+    z-index: 99;
+
+    &:hover {
+      color: #9d9b9b;
+    }
+  }
+
+  .slick-prev {
+    left: 85%;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+}
+
+.some {
+  color: red;
+}
