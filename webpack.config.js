@@ -224,14 +224,14 @@ contPlugin.push(
   }),
 
   //отвечает за копирование не компилируемых файлов в продакшен
-  new CopyWebpackPlugin({
-    patterns: [
-      {
-        from: './src/public',
-        to: './'
-      }
-    ]
-  }),
+  // new CopyWebpackPlugin({
+  //   patterns: [
+  //     {
+  //       from: './src/public',
+  //       to: './'
+  //     }
+  //   ]
+  // }),
 
   //подключение jquery в проект
   new webpack.ProvidePlugin({
