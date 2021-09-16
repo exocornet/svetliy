@@ -4,8 +4,10 @@
       +heading-2(excursion.heading, { m: "substrate" })
       +e('description', {}, 'p') !{excursion.description}
     +form('form', {}, 'form')(method='get' action="#")
-      +e('input',{}, 'input')(name='phone' type='tel' placeholder='Ваш номер телефона')
-      +e('input',{}, 'input')(name='name' type='text' placeholder='Ваше имя')
-      +e('button', {}, 'button')(type='submit') Записаться
+      +e('form-group')
+        +e('input input-phone',{}, 'input')(name='phone' type='tel' placeholder='Ваш номер телефона')
+        +e('button-clear hide', {}, 'button')
+        +e('input',{}, 'input')(name='name' type='text' placeholder='Ваше имя')
+        +e('button', {}, 'button')(type='submit') Записаться
 
 

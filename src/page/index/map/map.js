@@ -9,7 +9,6 @@ function computedIndention() {
 
   window.addEventListener('resize', () => {
     let offsetLeft = containerElement.getBoundingClientRect().left
-    console.log(offsetLeft)
     mapBillet.style.right = `calc(100% - (${offsetLeft}px + 380px))`;
   })
 }
