@@ -62,6 +62,10 @@
     margin-right: 15px;
     flex-grow: 1;
     min-height: 436px;
+
+    @include media(1169px) {
+      min-height: 364px;
+    }
   }
 
   &_reverse {
