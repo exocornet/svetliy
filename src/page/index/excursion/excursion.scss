@@ -3,6 +3,9 @@
   background-size: cover;
   height: 308px;
   display: flex;
+  @include media(959px) {
+    height: 100%;
+  }
 }
 
 .excursion {
@@ -10,6 +13,13 @@
   margin-bottom: auto;
   display: flex;
   justify-content: space-between;
+  @include media(959px) {
+    flex-direction: column;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+  }
 
   &__description {
     font-size: 16px;
@@ -18,6 +28,11 @@
     margin-top: 19px;
     max-width: 51%;
     font-weight: 400;
+    @include media(959px) {
+      width: 100%;
+      text-align: center;
+      max-width: 100%;
+    }
 
     &:before {
       content: "";
@@ -26,7 +41,9 @@
       width: 108px;
       background: #ffffff;
       margin-bottom: 23px;
+      @include media(959px) {
+        margin: 20px auto;
+      }
     }
   }
 }
-
