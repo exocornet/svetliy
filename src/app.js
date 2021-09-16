@@ -17,6 +17,7 @@ import 'slick-slider/slick/slick.min'
 
 // Настройки слайдеров
 import './page/index/elemental/elemental'
+import './page/index/district/district'
 
 
 // Подключение скриптов
