@@ -6,6 +6,8 @@
 
   @include media(1169px) {
     height: 560px;
+    background: url("./public/images/usp/bg-leaves.png") no-repeat,
+                url("./public/images/usp/bg-usp.jpg") no-repeat;
   }
 
   @include media(769px) {
@@ -13,7 +15,8 @@
   }
 
   @include media(579px) {
-    background: url("./public/images/usp/bg-usp-mobile.jpg") no-repeat;
+    background: url("./public/images/usp/bg-leaves.png") no-repeat,
+                url("./public/images/usp/bg-usp-mobile.jpg") no-repeat;
     height: 340px;
     background-size: cover;
   }
@@ -40,11 +43,13 @@
     @include media(1169px) {
       font-size: 32px;
       line-height: 38px;
+      width: 70%;
     }
 
     @include media(769px) {
       font-size: 24px;
       line-height: 28px;
+      width: 100%;
     }
 
     @include media(579px) {
@@ -87,12 +92,11 @@
     position: absolute;
     top: -370px;
     left: -400px;
-    //временно надо будет разобраться верстк едет
-    //width: 971px;
+    width: 971px;
     height: 971px;
 
     @include media(1169px) {
-      height: 510px;
+      display: none;
     }
   }
 }
