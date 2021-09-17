@@ -14,7 +14,8 @@
 
   @include media(579px) {
     background: url("./public/images/usp/bg-usp-mobile.jpg") no-repeat;
-    height: 290px;
+    height: 340px;
+    background-size: cover;
   }
 }
 
@@ -24,8 +25,8 @@
   position: relative;
 
   @include media(579px) {
-    top: 290px;
-    margin: 0;
+    top: 340px;
+    margin: 0 auto;
   }
 
   &__heading {
