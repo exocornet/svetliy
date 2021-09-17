@@ -48,6 +48,10 @@
       font-size: 16px;
     }
 
+    @include media(959px) {
+      max-width: 75%;
+    }
+
     @include media(769px) {
       font-size: 14px;
       max-width: 100%;
