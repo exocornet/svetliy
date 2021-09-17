@@ -1,5 +1,5 @@
 <?php
-    $to = "exocornet@gmail.com"; //емайл получателя
+    $to = "nso-osnova@yandex.ru"; //емайл получателя
     $tema = "Запись на экскурсию"; //Тема
     $message = "Ваше имя: ".$_POST['name']."<br>";//присвоить переменной значение, полученное из формы name=name
     $message .= "Номер телефона: ".$_POST['phone']."<br>"; //полученное из формы name=phone
