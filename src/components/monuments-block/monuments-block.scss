@@ -6,6 +6,10 @@
   &:first-child {
     margin-top: 0;
   }
+
+  @include media(579px) {
+    flex-direction: column;
+  }
 }
 
 .monument {
@@ -13,6 +17,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include media(579px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 
   &__description {
     font-size: 20px;
@@ -41,6 +50,14 @@
       min-height: 195px;
       padding: 0 20px;
       margin-bottom: 20px;
+    }
+
+    @include media(579px) {
+      text-align: center;
+      margin-right: 0;
+      min-height: 100%;
+      padding: 20px 30px;
+      align-items: center;
     }
 
     &:before {
@@ -89,6 +106,10 @@
     @include media(769px) {
       min-height: 195px;
     }
+
+    @include media(579px) {
+      margin-right: 0;
+    }
   }
 
   &_reverse {
@@ -100,11 +121,20 @@
       @include media(769px) {
         margin-top: 20px;
       }
+
+      @include media(579px) {
+        margin-left: 0;
+        margin-top: 0;
+      }
     }
 
     .monument__image {
       margin-right: 0;
       margin-left: 15px;
+
+      @include media(579px) {
+        margin-left: 0;
+      }
     }
   }
 }

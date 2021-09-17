@@ -32,7 +32,10 @@ $('.slider-elemental').slick({
     {
       breakpoint: 579,
       settings: {
-        arrows: false
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '5px'
       }
     }
   ]

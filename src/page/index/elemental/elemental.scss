@@ -73,6 +73,10 @@
       width: 510px;
       height: 295px;
     }
+
+    @include media(579px) {
+      height: 170px;
+    }
   }
 
   &__description {
@@ -100,6 +104,13 @@
       bottom: 20px;
       padding: 0 20px;
       width: 465px;
+    }
+
+    @include media(579px) {
+      font-size: 12px;
+      bottom: 10px;
+      padding: 0 10px;
+      width: 240px;
     }
   }
 

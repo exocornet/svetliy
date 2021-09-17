@@ -27,20 +27,24 @@ img {
   margin: 0 auto;
   padding: 0 30px;
 
+  //разрешение от 960px до 1169px
   @include media(1169px) {
     max-width: 930px;
   }
 
+  //разрешение от 770px до 959px
   @include media(959px) {
     max-width: 690px;
     padding: 0 40px;
   }
 
+  //разрешение от 580px до 769px
   @include media(769px) {
     max-width: 510px;
     padding: 0 35px;
    }
 
+  //разрешение от 320px до 579px
   @include media(579px) {
     max-width: 290px;
     padding: 0 15px;

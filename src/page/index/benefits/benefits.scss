@@ -75,5 +75,9 @@
     @include media(959px) {
       font-size: 12px;
     }
+
+    @include media(579px) {
+      font-size: 10px;
+    }
   }
 }

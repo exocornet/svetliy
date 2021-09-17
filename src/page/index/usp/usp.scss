@@ -11,12 +11,22 @@
   @include media(769px) {
     height: 420px;
   }
+
+  @include media(579px) {
+    background: url("./public/images/usp/bg-usp-mobile.jpg") no-repeat;
+    height: 290px;
+  }
 }
 
 .usp {
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
+
+  @include media(579px) {
+    top: 290px;
+    margin: 0;
+  }
 
   &__heading {
     font-weight: bold;
@@ -34,6 +44,12 @@
     @include media(769px) {
       font-size: 24px;
       line-height: 28px;
+    }
+
+    @include media(579px) {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
     }
   }
 
@@ -56,6 +72,12 @@
       font-size: 14px;
       max-width: 100%;
     }
+
+    @include media(579px) {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 4px;
+    }
   }
 
   &__leaves {
@@ -71,5 +93,14 @@
     @include media(1169px) {
       height: 510px;
     }
+  }
+}
+
+.usp-mobile {
+  display: none;
+
+  @include media(579px) {
+    display: block;
+    height: 190px;
   }
 }

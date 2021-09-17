@@ -9,6 +9,12 @@
     margin-top: 30px;
   }
 
+  @include media(579px) {
+    .heading-2 {
+      text-align: center;
+    }
+  }
+
   &__counter {
     margin-top: 10px;
     z-index: 1;
@@ -40,6 +46,7 @@
 
     @include media(579px) {
       text-align: center;
+      line-height: 1.35;
     }
   }
 
