@@ -24,6 +24,10 @@
     }
   }
 
+  @include media(579px) {
+    padding: 60px 15px 75px;
+  }
+
   &__content {
     margin-bottom: 30px;
   }

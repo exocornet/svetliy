@@ -13,6 +13,13 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
+
+
+      @include media(579px) {
+        &__link {
+          margin-right: 10px;
+        }
+      }
     }
 
     .logo {

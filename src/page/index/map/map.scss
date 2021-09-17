@@ -27,6 +27,11 @@
     @include media(959px) {
       top: calc(50% - 115px);
     }
+
+    @include media(579px) {
+      //временно надо решить потом верстка едет
+      width: 0;
+    }
   }
 }
 

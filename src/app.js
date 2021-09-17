@@ -23,3 +23,4 @@ import './page/index/district/district'
 // Подключение скриптов
 import './components/form/form'
 import './page/index/map/map'
+import './blocks/header/header'

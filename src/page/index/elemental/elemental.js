@@ -32,7 +32,7 @@ $('.slider-elemental').slick({
     {
       breakpoint: 579,
       settings: {
-
+        arrows: false
       }
     }
   ]

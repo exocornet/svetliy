@@ -8,4 +8,86 @@
   left: 0;
   right: 0;
   z-index: 2;
+
+  @include media(769px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      right: 0;
+      transition: all 1s;
+      display: flex;
+      z-index: -1;
+      top: -9999px;
+      padding-top: 80px;
+
+      &_active {
+        z-index: 1;
+        top: 0;
+        transition: all 0.5s;
+      }
+
+      &__link {
+        margin-right: 0;
+
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  @include media(769px) {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    border: 0;
+    background: rgba(15, 19, 60, 1);
+    padding: 0;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 3px;
+      background: rgba(15, 19, 60, 1);
+      position: absolute;
+    }
+
+    &:after {
+      bottom: 6px;
+    }
+
+    &:before {
+      top: 6px;
+    }
+
+    &_active {
+      background: transparent;
+      z-index: 10;
+
+      &::before {
+        transform: rotate(45deg);
+        top: auto;
+        transition: all 1s;
+        background: #ffffff;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        bottom: auto;
+        transition: all 1s;
+        background: #ffffff;
+      }
+    }
+  }
 }
