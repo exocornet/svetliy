@@ -1,5 +1,14 @@
 .menu {
 
+  &__wrapper {
+    @include media(769px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-end;
+    }
+  }
+
   &__link {
     text-decoration: none;
     color: #ffffff;
