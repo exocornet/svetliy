@@ -53,6 +53,11 @@
 }
 
 .slider-district {
+  padding: 0;
+
+  @include media(1169px) {
+    max-width: 100%;
+  }
 
   &__slide {
     margin-top: 20px;
@@ -69,19 +74,7 @@
     border-radius: 5px;
 
     @include media(1169px) {
-      height: 620px;
-    }
-
-    @include media(959px) {
-      height: 460px;
-    }
-
-    @include media(769px) {
-      height: 340px;
-    }
-
-    @include media(579px) {
-      height: 195px;
+      height: 100%;
     }
   }
 
@@ -106,10 +99,18 @@
   .slick-prev {
     left: auto;
     right: 95px;
+
+    @include media(1169px) {
+      right: 175px;
+    }
   }
 
   .slick-next {
     right: 0;
+
+    @include media(1169px) {
+      right: 80px;
+    }
   }
 
 }
