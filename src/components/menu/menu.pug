@@ -1,5 +1,4 @@
 mixin menu(data, bem)
   +b('menu', {}, 'nav')
-    +e('wrapper container')
-      for navLink in data
-        +e('link', bem, 'a')(href= navLink.href) !{navLink.link}
+    for navLink in data
+      +e('link', bem, 'a')(href= navLink.href) !{navLink.link}
