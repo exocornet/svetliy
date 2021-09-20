@@ -48,7 +48,17 @@
   }
 
   @include media(959px) {
-    display: none;
+    display: flex;
+    background-color: #ffffff;
+    position: relative;
+    padding: 25px 0;
+    height: 100%;
+    flex-direction: row;
+    left: auto;
+  }
+  @include media(769px) {
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -56,6 +66,12 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23.48px;
+    @include media(769px) {
+      text-align: center;
+      margin-bottom: 4px;
+      font-size: 16px;
+      line-height: 18.48px;
+    }
   }
 
   &__desc {
@@ -64,6 +80,12 @@
     font-size: 16px;
     font-weight: 200;
     font-family: Inter, 'sans-serif';
+    @include media(769px) {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 16.2px;
+    }
   }
 
   &__city-address {
@@ -75,6 +97,26 @@
     font-weight: 200;
     line-height: 21.6px;
     margin-top: 20px;
+    @include media(959px) {
+      margin-top: 0;
+    }
+    @include media(769px) {
+      font-size: 12px;
+      line-height: 16.2px;
+      font-weight: 300;
+      padding-bottom: 7px;
+    }
+    @include media(579px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   &__phone {
@@ -92,85 +134,13 @@
     &:hover {
       color: #FF7018;
     }
-  }
-}
-
-.billet-mobile {
-  display: none;
-  padding: 25px 0;
-  position: absolute;
-  width: 100%;
-  height: 58px;
-  bottom: 0;
-  background-color: #ffffff;
-  @include media(959px) {
-    display: block;
-  }
-  @include media(579px) {
-    padding: 15px 0;
-    height: 114px;
-  }
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include media(579px) {
-      flex-direction: column;
-    }
-  }
-
-  &__city-address {
-    background: url("./public/images/map/location.png") no-repeat left top;
-    padding-left: 28px;
-    color: #0F133C;
-    font-size: 16px;
-    font-family: Inter, 'sans-serif';
-    font-weight: 200;
-    line-height: 16.2px;
-    padding-bottom: 7px;
-    @include media(579px) {
+    @include media(769px) {
+      padding-top: 5px;
+      margin-top: 0;
       font-size: 12px;
-      br {
-        display: none;
-      }
-    }
-  }
-
-  &__phone {
-      width: fit-content;
-      background: url("./public/images/map/phone.png") no-repeat left top;
-      color: #0F133C;
-      font-size: 12px;
-      font-family: Inter, 'sans-serif';
-      font-weight: normal;
       line-height: 16.2px;
-      text-decoration: none;
-      transition: color 0.5s ease-out;
-      padding: 5px 28px;
-      &:hover {
-        color: #FF7018;
-      }
-  }
-
-  &__contacts {
-    @include media(579px) {
-      text-align: center;
-      margin-bottom: 15px;
+      font-weight: 300;
     }
-  }
-  &__title {
-    color: #0F133C;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  &__desc {
-    color: #8185A8;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 16.2px;
   }
 }
 
