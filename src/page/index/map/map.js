@@ -33,7 +33,7 @@ function init(){
   }, {
     // Автоматически устанавливать границы карты так, чтобы маршрут был виден целиком.
     boundsAutoApply: true,
-    wayPointStartIconColor: "#FFFFFF",
+    wayPointStartIconColor: "#ffffff",
     wayPointVisible: false
   });
 
